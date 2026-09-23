@@ -6,6 +6,9 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
+      // GitHub Pages serves this project from /hard-enduro-planner-/.
+      // Keep the root path for local development and previews.
+      base: process.env.GITHUB_ACTIONS ? '/hard-enduro-planner-/' : '/',
       server: {
         port: 3000,
         host: '0.0.0.0',
