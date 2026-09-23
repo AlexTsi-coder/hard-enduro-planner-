@@ -1,0 +1,10 @@
+{
+  "name": "Enduro Route Planner beta",
+  "description": "A specialized tool for enduro riders to design, merge, and export trails to GPX format using high-detail topographic maps.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
